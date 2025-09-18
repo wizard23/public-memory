@@ -20,18 +20,23 @@ fi
 
 ## Usage
 ### plugins i have installed
+```
 asdf plugin list
+```
 
 ###Show all available plugins from the community index
+```
 asdf plugin list all
+```
 
+### Install and activate examples
+```
 asdf list all java | grep temurin-21
 asdf install java temurin-21.0.8+9.0.LTS
 asdf set --home java temurin-21.0.8+9.0.LTS
-
-
 
 asdf list all clojure | tail
 
 asdf install clojure latest
 asdf set --home clojure latest
+```
