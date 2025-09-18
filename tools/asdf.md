@@ -1,8 +1,10 @@
 
 ## Setup
 ### get asdf and unpack
+```
 curl -LO https://github.com/asdf-vm/asdf/releases/download/v0.18.0/asdf-v0.18.0-linux-amd64.tar.gz
 tar -xvzf asdf-v0.18.0-linux-amd64.tar.gz -C ~/.asdf --strip-components=1
+```
 
 ### add this to .bashrc 
 ```
