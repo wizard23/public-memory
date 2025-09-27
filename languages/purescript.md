@@ -7,12 +7,20 @@ see vscode.md for general tipps :)
 * optional "vscode-purity" PureScript formator == npm package "purity"
 
 in project settings (or workspace settings):
-#### use per workspace package.json/node_modules for purescript/spago/purity
+#### use per vscode workspace package.json/node_modules for purescript/spago/purity
 ```
 "settings": {
   "purescript.addNpmPath": true
 }
 ```
+#### to avoid having to npm install purescript globally in more complicated setups
+(I used this for the purescriptbook vscode workspace)
+just add the `node_modules/.bin` folder to the `PATH` env var before starting vscode
+```
+PATH=$(npm root)/.bin:$PATH
+```
+
+
 
 # Problems I encountered
 and solutions kindly provided by ChatGPT ;)
