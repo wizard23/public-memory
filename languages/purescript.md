@@ -17,7 +17,7 @@ in project settings (or workspace settings):
 }
 ```
 #### avoid having to npm install purescript globally in more complicated setups
-(I used this for the purescriptbook vscode workspace since I did not want thi install a purecript for each chapter (which the clean `"purescript.addNpmPath": true` would entail) and installing any npm package globally is a no go anyway.)
+(I used this for the purescriptbook vscode workspace since I did not want to install a purecript for each chapter (which the clean `"purescript.addNpmPath": true` would entail) and installing any npm package globally is a no go anyway.)
 just add the `node_modules/.bin` folder to the `PATH` env var before starting vscode
 ```
 PATH=$(npm root)/.bin:$PATH
