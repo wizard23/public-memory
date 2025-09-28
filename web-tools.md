@@ -4,7 +4,11 @@
 * https://vscode.dev/
 
 # Math
+* https://www.geogebra.org/calculator or https://www.geogebra.org/classic
 * https://www.desmos.com/
+* https://www.wolframalpha.com/
+* https://www.symbolab.com/
+* 
 
 # Physics
 * https://www.falstad.com/mathphysics.html
@@ -19,8 +23,13 @@
 # Palettes
 * https://coolors.co/
 
-# Diagrams/Whiteboard
+# text based diagrams :)
 * https://mermaid.live/
+* https://flowchart.js.org/
+* https://bramp.github.io/js-sequence-diagrams/
+* 
+
+# Diagram/Whiteboard
 * https://app.diagrams.net/
 * https://excalidraw.com/
 * https://www.tldraw.com/
