@@ -5,5 +5,14 @@
 * https://squoosh.app/
 * https://www.photopea.com/
 
-# Drawing
+# Pixel
+* https://www.piskelapp.com/
+
+# Diagrams/Whiteboard
+* https://mermaid.live/
+* https://app.diagrams.net/
 * https://excalidraw.com/
+* https://www.tldraw.com/
+
+# Audio
+* https://audiomass.co/
