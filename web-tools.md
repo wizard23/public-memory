@@ -24,10 +24,14 @@
 * https://coolors.co/
 
 # text based diagrams :)
+* https://kroki.io/ https://github.com/yuzutech/kroki ALL of the below
+* https://play.d2lang.com/
+* 
+* UML https://www.nomnoml.com/ https://github.com/skanaar/nomnoml
 * https://mermaid.live/
 * https://flowchart.js.org/
 * https://bramp.github.io/js-sequence-diagrams/
-* 
+* https://state-machine-cat.js.org/
 
 # Diagram/Whiteboard
 * https://app.diagrams.net/
@@ -42,7 +46,13 @@
 * https://www.beepbox.co/
 
 # collaborative
-* https://www.ethercalc.net/
+* https://docs.fediverse.foundation/ https://cryptpad.private.coffee/ (https://cryptpad.org/ instances hosted in Austria)
 * https://board.net/ (an https://etherpad.org/ instance hosted in Austria by https://fairapps.net/)
+*
+* https://www.ethercalc.net/
 * https://whimsical.com/ (commercial)
-* 
+
+# Node (all commercial)
+* https://starboard.gg/dashboard/new
+* https://observablehq.com/ (no free demo)
+* https://runkit.com/ (no free demo)
