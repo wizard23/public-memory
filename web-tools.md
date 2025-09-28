@@ -34,5 +34,6 @@
 
 # collaborative
 * https://www.ethercalc.net/
+* https://board.net/ (an https://etherpad.org/ instance hosted in Austria by https://fairapps.net/)
 * https://whimsical.com/ (commercial)
 * 
