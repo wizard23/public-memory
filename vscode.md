@@ -35,20 +35,35 @@ for more on tasks see: https://code.visualstudio.com/docs/debugtest/tasks
 
 ## debugging
 in `.vscode/launch.json`
-### the currently openened file with ts support
+### some usefull configurations
 ```
-    {
-      "name": "current ts file",
-      "type": "node",
-      "request": "launch",
-      "args": [
-        "${relativeFile}"
-      ],
-      "runtimeArgs": [
-        "-r",
-        "ts-node/register"
-      ],
-      "cwd": "${workspaceRoot}",
-    },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Nodemon Current File with ts-node",
+            "runtimeExecutable": "nodemon",
+            "runtimeArgs": ["--exec", "ts-node"],
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "skipFiles": ["<node_internals>/**"],
+            "outFiles": ["${workspaceFolder}/**/*.js", "${workspaceFolder}/**/*.ts"],
+            "sourceMaps": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Nodemon Current File with ts-node/register",
+            "runtimeExecutable": "nodemon",
+            "runtimeArgs": ["-r", "ts-node/register"],
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "skipFiles": ["<node_internals>/**"],
+            "outFiles": ["${workspaceFolder}/**/*.js", "${workspaceFolder}/**/*.ts"],
+            "sourceMaps": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }
 ```
 
