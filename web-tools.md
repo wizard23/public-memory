@@ -26,7 +26,8 @@
 # text based diagrams :)
 * https://kroki.io/ https://github.com/yuzutech/kroki ALL of the below
 * https://play.d2lang.com/
-* 
+
+* https://graphviz.org/
 * UML https://www.nomnoml.com/ https://github.com/skanaar/nomnoml
 * https://mermaid.live/
 * https://flowchart.js.org/
