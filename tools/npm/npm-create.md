@@ -4,6 +4,11 @@ npm create vite@latest
 npx create-vite@latest
 ```
 
+typically supports templates that just come from a path in the git repo like this exam[ple from react router:
+```
+npx create-react-router@latest --template remix-run/react-router-templates/<template-name>
+```
+
 ## Groks explanation
 To explain why npm interprets npm create vite@latest as a shorthand for executing the create-vite package, let’s dive into how npm handles the create command and why this behavior exists. Here’s a detailed breakdown:
 
