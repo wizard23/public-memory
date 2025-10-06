@@ -1,6 +1,6 @@
 ```
 npm create vite@latest
-/ ~==
+# ==> 
 npx create-vite@latest
 ```
 
