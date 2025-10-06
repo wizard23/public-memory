@@ -55,3 +55,28 @@ which deno
 | `asdf set -u deno latest`     | **User-level (global)**   | All projects that **don’t have a local version** | `~/.tool-versions`                 | Your personal default when no `.tool-versions` exists                                     |
 | `asdf set --home deno latest` | **HOME-directory scoped** | Only applies inside your `$HOME` tree            | `~/.tool-versions` in `$HOME`      | Similar to `-u`, but only active when `$PWD` is under `$HOME` (not e.g. `/mnt` or `/opt`) |
 
+
+### install example
+```
+asdf plugin add deno https://github.com/asdf-community/asdf-deno.git
+
+# Download and install the latest version of Deno
+asdf install deno latest
+
+# To set as the default version of Deno globally
+asdf set -u deno latest
+
+# To set as the default version of Deno locally (current project only)
+asdf set deno latest
+```
+
+
+### uninstall example
+```
+asdf list deno                  # see installed versions
+asdf uninstall deno 2.5.3       # repeat for any others
+asdf plugin remove deno
+asdf reshim
+hash -r   # clear your shell’s command cache
+```
+
