@@ -41,6 +41,12 @@ asdf install clojure latest
 asdf set --home clojure latest
 ```
 
+### check where it comes from
+```
+asdf current deno
+which deno
+```
+
 ### `asdf set`
 
 | Command                       | Scope                     | Affects                                          | Stored in                          | Description                                                                               |
