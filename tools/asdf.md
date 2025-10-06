@@ -40,3 +40,12 @@ asdf list all clojure | tail
 asdf install clojure latest
 asdf set --home clojure latest
 ```
+
+### `asdf set`
+
+| Command                       | Scope                     | Affects                                          | Stored in                          | Description                                                                               |
+| ----------------------------- | ------------------------- | ------------------------------------------------ | ---------------------------------- | ----------------------------------------------------------------------------------------- |
+| `asdf set deno latest`        | **Local (default)**       | Only the **current project directory**           | `.tool-versions` in that directory | Most common — project-specific version                                                    |
+| `asdf set -u deno latest`     | **User-level (global)**   | All projects that **don’t have a local version** | `~/.tool-versions`                 | Your personal default when no `.tool-versions` exists                                     |
+| `asdf set --home deno latest` | **HOME-directory scoped** | Only applies inside your `$HOME` tree            | `~/.tool-versions` in `$HOME`      | Similar to `-u`, but only active when `$PWD` is under `$HOME` (not e.g. `/mnt` or `/opt`) |
+
