@@ -50,8 +50,7 @@
 
 # collaborative
 * https://docs.fediverse.foundation/ https://cryptpad.private.coffee/ (https://cryptpad.org/ instances hosted in Austria)
-* https://board.net/ (an https://etherpad.org/ instance hosted in Austria by https://fairapps.net/)
-*
+* https://board.net/ (https://etherpad.org/ instance hosted in Austria by https://fairapps.net/)
 * https://www.ethercalc.net/
 * https://whimsical.com/ (commercial)
 
