@@ -8,7 +8,6 @@
 * https://www.desmos.com/
 * https://www.wolframalpha.com/
 * https://www.symbolab.com/
-* 
 
 # Physics
 * https://www.falstad.com/mathphysics.html
@@ -16,6 +15,9 @@
 # Images
 * https://squoosh.app/
 * https://www.photopea.com/
+
+# PDF manipulation
+* https://www.ilovepdf.com/
 
 # Pixel
 * https://www.piskelapp.com/
