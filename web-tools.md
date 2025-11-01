@@ -52,7 +52,6 @@
 * https://docs.fediverse.foundation/ https://cryptpad.private.coffee/ (https://cryptpad.org/ instances hosted in Austria)
 * https://board.net/ (https://etherpad.org/ instance hosted in Austria by https://fairapps.net/)
 * https://www.ethercalc.net/
-* https://whimsical.com/ (commercial)
 
 # Node (all commercial)
 * https://starboard.gg/dashboard/new
