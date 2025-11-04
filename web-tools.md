@@ -3,6 +3,9 @@
 * https://www.jwt.io/
 * https://vscode.dev/
 
+* https://ts-ast-viewer.com/#
+* https://react-scan.com/
+
 # Math
 * https://www.geogebra.org/calculator or https://www.geogebra.org/classic
 * https://www.desmos.com/
