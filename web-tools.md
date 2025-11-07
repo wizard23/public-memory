@@ -3,7 +3,8 @@
 * https://www.jwt.io/
 * https://vscode.dev/
 
-* https://ts-ast-viewer.com/#
+* https://ts-ast-viewer.com/
+* https://www.runpkg.com/
 * https://react-scan.com/
 
 # Math
