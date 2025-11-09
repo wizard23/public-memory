@@ -1,10 +1,21 @@
 
 ## Setup
-### get asdf and unpack
+### Links
+* Download Pre-Compiled Binary - Easy: https://asdf-vm.com/guide/getting-started.html
+* latest release: https://github.com/asdf-vm/asdf/releases
+
+### Download and extract script
 ```
-curl -LO https://github.com/asdf-vm/asdf/releases/download/v0.18.0/asdf-v0.18.0-linux-amd64.tar.gz
-tar -xvzf asdf-v0.18.0-linux-amd64.tar.gz -C ~/.asdf --strip-components=1
+curl -fSLO https://github.com/asdf-vm/asdf/releases/download/v0.18.0/asdf-v0.18.0-linux-amd64.tar.gz
+mkdir -p ~/.asdf/bin
+tar -xvzf asdf-v0.18.0-linux-amd64.tar.gz -C ~/.asdf/bin
 ```
+* curl -fSLO
+  * `-f` / `--fail` : Non-2xx/3xx HTTP codes cause curl to exit with error (prevents saving error pages as files).
+  * `-S` / `--show-error` : Show errors even if you use `-s` / `--silent`.
+  * `-L` / `--location` :  Follow HTTP redirects.
+  * `-O` / `--remote-name` : Save the downloaded file using the remote filename (by default, curl outputs to stdout).
+
 
 ### add this to .bashrc 
 ```
@@ -77,4 +88,9 @@ asdf plugin remove deno
 asdf reshim
 hash -r   # clear your shell’s command cache
 ```
+
+### Purescript
+```
+asdf plugin add purescript https://github.com/jrrom/asdf-purescript.git
+
 
