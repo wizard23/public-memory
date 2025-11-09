@@ -112,6 +112,11 @@ asdf plugin add purescript https://github.com/jrrom/asdf-purescript.git
 asdf list all purescript
 asdf install purescript latest
 asdf set -u purescript latest
+
+asdf plugin add spago https://github.com/jrrom/asdf-spago.git
+asdf list all spago
+asdf install spago latest
+asdf set -u spago latest
 ```
 
 
