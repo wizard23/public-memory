@@ -104,7 +104,7 @@ hash -r   # clear your shell’s command cache
 asdf plugin add purescript https://github.com/jrrom/asdf-purescript.git
 asdf list all purescript
 asdf install purescript latest
-asdf set -u deno purescript
+asdf set -u purescript purescript
 ```
 
 
