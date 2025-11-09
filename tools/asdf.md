@@ -45,7 +45,7 @@ fi
 asdf plugin list
 ```
 
-###Show all available plugins from the community index
+### Show all available plugins from the community index https://github.com/asdf-vm/asdf-plugins
 ```
 asdf plugin list all
 ```
@@ -102,5 +102,9 @@ hash -r   # clear your shell’s command cache
 ### Purescript
 ```
 asdf plugin add purescript https://github.com/jrrom/asdf-purescript.git
+asdf list all purescript
+asdf install purescript latest
+asdf set -u deno purescript
+```
 
 
