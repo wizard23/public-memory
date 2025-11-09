@@ -50,6 +50,12 @@ asdf plugin list
 asdf plugin list all
 ```
 
+### List what's installed
+```
+asdf list
+asdf current
+```
+
 ### Install and activate examples
 ```
 asdf list all java | grep temurin-21
