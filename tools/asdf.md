@@ -1,7 +1,7 @@
 
 ## Setup
 ### Links
-* Download Pre-Compiled Binary - Easy: https://asdf-vm.com/guide/getting-started.html
+* The scripts below are my version of "Download Pre-Compiled Binary" and "Configure asdf for Bash" sections from here: https://asdf-vm.com/guide/getting-started.html
 * latest release: https://github.com/asdf-vm/asdf/releases
 
 ### Download and extract script
@@ -10,12 +10,12 @@ curl -fSLO https://github.com/asdf-vm/asdf/releases/download/v0.18.0/asdf-v0.18.
 mkdir -p ~/.asdf/bin
 tar -xvzf asdf-v0.18.0-linux-amd64.tar.gz -C ~/.asdf/bin
 ```
+#### Explanation
 * curl -fSLO
   * `-f` / `--fail` : Non-2xx/3xx HTTP codes cause curl to exit with error (prevents saving error pages as files).
   * `-S` / `--show-error` : Show errors even if you use `-s` / `--silent`.
   * `-L` / `--location` :  Follow HTTP redirects.
   * `-O` / `--remote-name` : Save the downloaded file using the remote filename (by default, curl outputs to stdout).
-
 
 ### add this to .bashrc 
 ```
