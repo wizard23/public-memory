@@ -10,12 +10,22 @@ curl -fSLO https://github.com/asdf-vm/asdf/releases/download/v0.18.0/asdf-v0.18.
 mkdir -p ~/.asdf/bin
 tar -xvzf asdf-v0.18.0-linux-amd64.tar.gz -C ~/.asdf/bin
 ```
-#### Explanation
-* curl -fSLO
+#### Explanation of script
+* `curl -fSLO`
   * `-f` / `--fail` : Non-2xx/3xx HTTP codes cause curl to exit with error (prevents saving error pages as files).
   * `-S` / `--show-error` : Show errors even if you use `-s` / `--silent`.
   * `-L` / `--location` :  Follow HTTP redirects.
   * `-O` / `--remote-name` : Save the downloaded file using the remote filename (by default, curl outputs to stdout).
+* `mkdir -p ~/.asdf/bin`
+  * `-p` / `--parents` : No error if existing, make parent directories as needed.
+  * `~/.asdf/bin` : I like to save the binary in the `.asdf` folder itself
+* `tar -xvzf asdf-v0.18.0-linux-amd64.tar.gz -C ~/.asdf/bin`
+  * `-x`	extract:	Tells tar to extract files from the archive.
+  * `-v`	verbose:	Shows every file being extracted (prints file names).
+  * `-z`	gzip:	Means the archive is compressed with gzip (.gz).
+  * `-f`	file:	Specifies that the next argument is the filename.
+  * `-C` means change directory before extracting (so basically
+  * (`--strip-components=1` Many tar archives contain files inside a top-level directory but asdf (at least v0.18.0 for linux) does not (so this is not needed - in fact it would lead to nothing being extracted)) 
 
 ### add this to .bashrc 
 ```
