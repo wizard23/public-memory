@@ -3,6 +3,7 @@
 ### Links
 * The scripts below are my version of "Download Pre-Compiled Binary" and "Configure asdf for Bash" sections from here: https://asdf-vm.com/guide/getting-started.html
 * latest release: https://github.com/asdf-vm/asdf/releases
+* first party plugins see:  https://github.com/orgs/asdf-vm/repositories
 * asdf plugins repository: https://github.com/asdf-vm/asdf-plugins
 
 ### Download and extract script
