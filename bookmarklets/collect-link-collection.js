@@ -86,8 +86,19 @@ javascript:(()=>{
 
 
 /*
-created with chatgpt using prompt:
-please write a bookmarklet (human readable but still able to be copy and pasted as bookmarklet so make sure it does not contain // comments and all statements end with ; ) that 
-* appends the current url to the copy paste buffer prepending it by "* " and show an alert if this failed 
-do the following changes: * move the code for copyingtext to the clipboard in a seperate function called writeClipboard * also create a readClipboard function that reads the current clipboard content * then use this new function to read the current clipboard content and then: * if the clipboard content starts with a "#" then append the url with a "\n* " in front of it to the clipboard * else (the clipboard content does not start with a "#") then overwrite the clipboard content with: "## Links <current datetime in format YYYY/MM/DD HH:MM>\n* <the url>"
+created with chatgpt using prompts:
+
+please write a bookmarklet that:
+* is human readable but still works when copied and pasted as a bookmarklet so 
+  * make sure it does not contain // comments 
+  * and all statements end with ; ) 
+* that appends the current url to the copy paste buffer prepending it by "* " 
+* shows an alert if this failed
+
+do the following changes: 
+* move the code for copyingtext to the clipboard in a seperate function called writeClipboard 
+* also create a readClipboard function that reads the current clipboard content 
+* then use this new function to read the current clipboard content and then: 
+* if the clipboard content starts with a "#" then append the url with a "\n* " in front of it to the clipboard 
+* else (the clipboard content does not start with a "#") then overwrite the clipboard content with: "## Links <current datetime in format YYYY/MM/DD HH:MM>\n* <the url>"
 */
