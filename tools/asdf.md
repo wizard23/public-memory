@@ -26,7 +26,7 @@ tar -xvzf asdf-v0.18.0-linux-amd64.tar.gz -C ~/.asdf/bin
   * `-v`	verbose:	Shows every file being extracted (prints file names).
   * `-z`	gzip:	Means the archive is compressed with gzip (.gz).
   * `-f`	file:	Specifies that the next argument is the filename.
-  * `-C` means change directory before extracting
+  * `-C` means change directory before extracting (another way to see it: 'copy to' which also starts with c...)
   * (`--strip-components=1` Many tar archives contain files inside a top-level directory but asdf (at least v0.18.0 for linux) does not (so this is not needed - in fact it would lead to nothing being extracted)) 
 
 ### add this to .bashrc 
