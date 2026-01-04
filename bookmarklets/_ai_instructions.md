@@ -4,7 +4,7 @@
 
 Given this element tree somewhere in a document.
 
-<insert copy pasted element from webpage>
+`<insert copy pasted element from webpage>`
 
 Please write a bookmarklet (human readable, multiline, using /* */ style comments) that extends the height of the element to the whole screen.
 
@@ -16,7 +16,7 @@ Can you extend the script to:
 * then asynchronously waits for the element the bookmarklet targets to appear and
 * then does the height modifications
 
-<insert copy pasted button element from webpage>
+`<insert copy pasted button element from webpage>`
 
 
 ### it really likes to mess up the syntax
