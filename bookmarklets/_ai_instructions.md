@@ -6,7 +6,7 @@ Given this element tree somewhere in a document.
 
 `<insert copy pasted element from webpage>`
 
-Please write a bookmarklet (human readable, multiline, using /* */ style comments) that extends the height of the element to the whole screen.
+Please write a bookmarklet (human readable, multiline, using `/* */` style comments) that extends the height of the element to the whole screen.
 
 
 ### typical follow up
