@@ -26,7 +26,7 @@ cmake ..
 make -j8
 ```
 
-### log
+### log (expected)
 ```shellsession
 wizard23@Philipps-iMac ~ % 
 wizard23@Philipps-iMac ~ % 
