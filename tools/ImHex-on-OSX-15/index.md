@@ -15,6 +15,7 @@ If you compile it locally on macOS 10.15 it will usually work.
 
 Typical steps:
 
+#### cmd
 ```
 brew install cmake llvm glfw freetype capstone python
 git clone https://github.com/WerWolv/ImHex.git
@@ -25,8 +26,8 @@ cmake ..
 make -j8
 ```
 
-
-```
+### log
+```shellsession
 wizard23@Philipps-iMac ~ % 
 wizard23@Philipps-iMac ~ % 
 wizard23@Philipps-iMac ~ % ls
