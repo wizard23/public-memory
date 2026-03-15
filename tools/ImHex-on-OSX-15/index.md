@@ -247,4 +247,255 @@ Read the above document before opening any issues or PRs.
 
 
 
+
+==> cmake --build . --target install
+==> /usr/libexec/PlistBuddy -c Add:CFBundleIdentifier string org.llvm.22.1.1 Info.plist
+==> /usr/libexec/PlistBuddy -c Add:CompatibilityVersion integer 2 Info.plist
+Warning: The post-install step did not complete successfully
+You can try again using:
+  brew postinstall llvm
+==> Caveats
+CLANG_CONFIG_FILE_SYSTEM_DIR: /usr/local/etc/clang
+CLANG_CONFIG_FILE_USER_DIR:   ~/.config/clang
+
+LLD is now provided in a separate formula:
+  brew install lld
+
+Using `clang`, `clang++`, etc., requires a CLT installation at `/Library/Developer/CommandLineTools`.
+If you don't want to install the CLT, you can write appropriate configuration files pointing to your
+SDK at ~/.config/clang.
+
+To use the bundled libunwind please use the following LDFLAGS:
+  LDFLAGS="-L/usr/local/opt/llvm/lib/unwind -lunwind"
+
+To use the bundled libc++ please use the following LDFLAGS:
+  LDFLAGS="-L/usr/local/opt/llvm/lib/c++ -L/usr/local/opt/llvm/lib/unwind -lunwind"
+Features newer than system libc++ will require the following define to enable
+(support for this may be removed in a future major LLVM release):
+  CPPFLAGS="-D_LIBCPP_DISABLE_AVAILABILITY"
+
+NOTE: You probably want to use the libunwind and libc++ provided by macOS unless you know what you're doing.
+
+llvm is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have llvm first in your PATH, run:
+  echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find llvm you may need to set:
+  export LDFLAGS="-L/usr/local/opt/llvm/lib"
+  export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
+For cmake to find llvm you may need to set:
+  export CMAKE_PREFIX_PATH="/usr/local/opt/llvm"
+==> Summary
+🍺  /usr/local/Cellar/llvm/22.1.1: 9,638 files, 1.7GB, built in 114 minutes 5 seconds
+==> Running `brew cleanup llvm`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+Removing: /usr/local/Cellar/llvm/21.1.8_1... (9,238 files, 1.6GB)
+Removing: /Users/wizard23/Library/Caches/Homebrew/llvm--21.1.8.tar.xz... (159.0MB)
+Removing: /Users/wizard23/Library/Caches/Homebrew/llvm--patch--f6dafd762737eb79761ab7ef814a9fc802ec4bb8d20f46691f07178053b0eb36.diff... (4.5KB)
+==> Pouring glfw--3.4.ventura.bottle.2.tar.gz
+🍺  /usr/local/Cellar/glfw/3.4: 16 files, 844.8KB
+==> Running `brew cleanup glfw`...
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 15.2.
+
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report issues with Tier 2 configurations to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+==> Installing freetype dependency: libpng
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 15.2.
+
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report issues with Tier 2 configurations to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+==> ./configure --disable-silent-rules
+==> make
+==> make test
+==> make install
+🍺  /usr/local/Cellar/libpng/1.6.55: 28 files, 1.3MB, built in 56 seconds
+==> ./configure --enable-freetype-config --without-harfbuzz
+==> make
+==> make install
+🍺  /usr/local/Cellar/freetype/2.14.2: 68 files, 2.8MB, built in 20 seconds
+==> Running `brew cleanup freetype`...
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 15.2.
+
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report issues with Tier 2 configurations to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+==> Installing dependencies for capstone: libunistring and gettext
+==> Installing capstone dependency: libunistring
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 15.2.
+
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report issues with Tier 2 configurations to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+==> ./configure --disable-silent-rules
+==> make
+==> make check
+==> make install
+🍺  /usr/local/Cellar/libunistring/1.4.2: 59 files, 5.9MB, built in 11 minutes 15 seconds
+==> Installing capstone dependency: gettext
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 15.2.
+
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report issues with Tier 2 configurations to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+==> ./configure --with-libunistring-prefix=/usr/local/opt/libunistring --disable-silent-rules --with-included-glib --with-included-libcroco --with-emacs --with-lispdir=/usr/local/Cellar/gettext/1.0/share/emacs/site-lisp/gettext --disable-java --disable-csharp --without-git --without-cvs --without-xz --with-included-gettext
+==> make
+==> make install
+🍺  /usr/local/Cellar/gettext/1.0: 2,499 files, 34.7MB, built in 10 minutes 47 seconds
+==> Installing capstone
+==> ./make.sh
+==> make install PREFIX=/usr/local/Cellar/capstone/5.0.7
+🍺  /usr/local/Cellar/capstone/5.0.7: 31 files, 23.1MB, built in 42 seconds
+==> Running `brew cleanup capstone`...
+==> Caveats
+==> llvm
+CLANG_CONFIG_FILE_SYSTEM_DIR: /usr/local/etc/clang
+CLANG_CONFIG_FILE_USER_DIR:   ~/.config/clang
+
+LLD is now provided in a separate formula:
+  brew install lld
+
+Using `clang`, `clang++`, etc., requires a CLT installation at `/Library/Developer/CommandLineTools`.
+If you don't want to install the CLT, you can write appropriate configuration files pointing to your
+SDK at ~/.config/clang.
+
+To use the bundled libunwind please use the following LDFLAGS:
+  LDFLAGS="-L/usr/local/opt/llvm/lib/unwind -lunwind"
+
+To use the bundled libc++ please use the following LDFLAGS:
+  LDFLAGS="-L/usr/local/opt/llvm/lib/c++ -L/usr/local/opt/llvm/lib/unwind -lunwind"
+Features newer than system libc++ will require the following define to enable
+(support for this may be removed in a future major LLVM release):
+  CPPFLAGS="-D_LIBCPP_DISABLE_AVAILABILITY"
+
+NOTE: You probably want to use the libunwind and libc++ provided by macOS unless you know what you're doing.
+
+llvm is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have llvm first in your PATH, run:
+  echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find llvm you may need to set:
+  export LDFLAGS="-L/usr/local/opt/llvm/lib"
+  export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
+For cmake to find llvm you may need to set:
+  export CMAKE_PREFIX_PATH="/usr/local/opt/llvm"
+Cloning into 'ImHex'...
+remote: Enumerating objects: 73459, done.
+remote: Counting objects: 100% (90/90), done.
+remote: Compressing objects: 100% (53/53), done.
+remote: Total 73459 (delta 44), reused 68 (delta 37), pack-reused 73369 (from 1)
+Receiving objects: 100% (73459/73459), 49.73 MiB | 9.59 MiB/s, done.
+Resolving deltas: 100% (47440/47440), done.
+Updating files: 100% (1163/1163), done.
+-- Configuring ImHex v1.39.0.WIP
+-- The C compiler identification is AppleClang 14.0.3.14030022
+-- The CXX compiler identification is AppleClang 14.0.3.14030022
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at cmake/build_helpers.cmake:569 (message):
+  External dependency
+  /Users/wizard23/projects/build-imhex/ImHex/lib/external/disassembler is
+  empty!
+
+  Make sure to correctly clone ImHex using the --recurse-submodules git
+  option or initialize the submodules manually.
+Call Stack (most recent call first):
+  CMakeLists.txt:69 (detectBadClone)
+
+
+-- Configuring incomplete, errors occurred!
+make: *** No targets specified and no makefile found.  Stop.
+wizard23@Philipps-iMac build %                                                      
+
+
+
+
+
+
+
+
+
 ```
