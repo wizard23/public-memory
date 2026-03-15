@@ -488,14 +488,7 @@ Call Stack (most recent call first):
 
 -- Configuring incomplete, errors occurred!
 make: *** No targets specified and no makefile found.  Stop.
-wizard23@Philipps-iMac build %                                                      
-
-
-
-
-
-
-
+wizard23@Philipps-iMac build %
 
 
 ```
