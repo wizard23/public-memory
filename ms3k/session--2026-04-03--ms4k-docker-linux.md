@@ -147,3 +147,9 @@ Processing triggers for man-db (2.12.0-4build2) ...
 Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
 (.venv_ms4000) wizard@imac-battleship:~/projects/MS/MS4000/firmware$ 
 ```
+
+
+```
+sudo usermod -a -G dialout wizard
+newgrp dialout
+```
