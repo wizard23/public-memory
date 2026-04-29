@@ -377,3 +377,42 @@ If you want, I can also:
 * integrate this with your devcontainer setup
 * pin pnpm via corepack properly
 * or align it with your monorepo workflow
+
+---
+## 🛠️ If you WANT a .mise.toml
+
+Run this instead inside a project:
+```
+mise use node@24.14.1 --local
+```
+👉 This creates:
+```
+./.mise.toml
+```
+with:
+```
+[tools]
+node = "24.14.1"
+```
+
+## 🚫 What happens if a dir is NOT trusted
+
+You’ll see something like:
+```
+mise: directory is not trusted
+```
+And mise will refuse to:
+* install tools
+* activate environment
+* run hooks
+### ✅ How to trust a directory
+1. Trust the current directory
+```
+mise trust
+```
+This marks the current directory as trusted.
+
+2. Trust a specific directory
+```
+mise trust /path/to/project
+```
