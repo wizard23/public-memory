@@ -6,11 +6,73 @@ changes.
 
 ## Quick Decision Guide
 
+* You staged the wrong file: use `git restore --staged <file>`.
+* You staged everything by accident: use `git restore --staged .`.
 * Last commit is local and you want to edit it: use `git reset --soft HEAD~1`.
 * Last commit is local and you want to keep changes unstaged: use `git reset --mixed HEAD~1`.
 * Last commit is local and you want to discard it completely: use `git reset --hard HEAD~1`.
 * Commit was pushed or shared with others: use `git revert <commit>`.
 * You used the wrong undo command: use `git reflog` to find the old commit.
+
+## What Staging Means
+
+Git has three common places where your work can be:
+
+* Working tree: the files you are editing.
+* Staging area, also called the index: the snapshot Git will put in the next
+  commit.
+* Commit history: snapshots already saved as commits.
+
+`git add` copies the current version of a file into the staging area.
+
+```bash
+git add <file>
+```
+
+`git commit` saves what is currently staged. It does not automatically commit
+every modified file unless you have staged those changes first.
+
+```bash
+git commit -m "Message"
+```
+
+This means a file can have staged changes and newer unstaged changes at the same
+time. Check with:
+
+```bash
+git status
+git diff
+git diff --staged
+```
+
+Use `git diff` to see unstaged changes. Use `git diff --staged` to see what
+would go into the next commit.
+
+## Unstage Changes
+
+Unstaging removes changes from the staging area but keeps them in your files.
+This is useful when you ran `git add` too broadly.
+
+Unstage one file:
+
+```bash
+git restore --staged <file>
+```
+
+Unstage everything:
+
+```bash
+git restore --staged .
+```
+
+Older Git versions used this form, which still works:
+
+```bash
+git reset HEAD <file>
+```
+
+After unstaging, the file is still modified in your working tree. If you also
+want to throw away the file changes, use `git restore <file>`.
 
 ## Undo The Last Commit, Keep Changes Staged
 
@@ -159,6 +221,18 @@ git switch -c recovery-branch <commit-sha>
 
 ## Undo Uncommitted File Changes
 
+Unstage a file but keep the file changes:
+
+```bash
+git restore --staged <file>
+```
+
+Unstage all files but keep the file changes:
+
+```bash
+git restore --staged .
+```
+
 Discard changes in one file:
 
 ```bash
@@ -169,12 +243,6 @@ Discard all tracked-file changes:
 
 ```bash
 git restore .
-```
-
-Unstage a file but keep the file changes:
-
-```bash
-git restore --staged <file>
 ```
 
 Remove untracked files and directories:
