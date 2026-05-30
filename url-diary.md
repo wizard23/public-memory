@@ -4,6 +4,8 @@
 * https://www.comfy.org/download
   * https://github.com/Comfy-Org/ComfyUI
   * https://github.com/Comfy-Org/ComfyUI#installing
+* FontAwesome: https://fontawesome.com/
+  * radioactive icons: https://fontawesome.com/search?q=radioactive
 
 ### 27-05-2026
 * Dither npm package: https://elk.zone/m.webtoo.ls/@swithinbank/115747764416666317
