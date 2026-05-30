@@ -1,3 +1,10 @@
+### 30-05-2026
+* https://understand-anything.com/
+  * https://github.com/Lum1104/Understand-Anything
+* https://www.comfy.org/download
+  * https://github.com/Comfy-Org/ComfyUI
+  * https://github.com/Comfy-Org/ComfyUI#installing
+
 ### 27-05-2026
 * Dither npm package: https://elk.zone/m.webtoo.ls/@swithinbank/115747764416666317
 
